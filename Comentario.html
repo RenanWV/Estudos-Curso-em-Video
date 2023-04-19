@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações</title>
+</head>
+<body>
+    <h1 class="titulo">Anotações importantes</h1>
+
+    <div class="aula">
+        <h2 class="titulo-secundario">Tratando dados</h2>
+        <h3 class="sub-titolo">como converter números para strings e vice e versa</h3>
+        <p> 
+            <pre>
+                É bem simples siga o exemplo:
+                    var n1 = Number(prompt('Digite um numero:'))
+                    var n2 = Number(prompt('Digite outro numero:'))
+                    var soma = n1 + n2
+                    alert('A soma dos valores é: ' + soma.toString()).
+                    você está convertendo uma string para números usando (Number) para fazer a conversão. É o (.toString()) para converter em string novamente
+
+                    dica: use o template string para deixar seu código mais bonito ex:"alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)" usando o comando ${} e sempre utilizando a crase(``)
+            </pre>
+        </p>
+
+        <h3 class="sub-titulo">Formatação de números e strings</h3>
+        <p>
+            <pre>
+                Algumas formatações de strings:
+                    var nome = prompt('Qual é seu nome?')
+                    document.write(`Seu nome tem ${nome.length} letras.`)
+                    document.write(`Seu nome em maiúscula fica ${nome.toUpperCase()}`)
+                    document.write(`Seu nome em minúscula fica ${nome.toLowerCase()}`)
+            </pre>
+        </p>
+        <p>
+            <pre>
+                Algumas formatações de números:
+                    var n1 = 1545.5
+                    n1.toFixed(2) = '1545.50' ele coloca mais casas decimas depois do (.)
+                    n1.toFixed(2).replace('.', ',') = '1454,50' Ele troca um objeto por outro aqui no caso ponto(.) por vírgula(,).
+                    n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) = R$ 1,545.50 Ele formata para dinheiro REAL.
+            </pre>
+        </p>
+    </div>
+
+    <div class="aula">
+        <h2 class="titulo-secundario">Operadores</h2>
+
+        <h3 class="sub-titulo">Operadores aritméticos</h3>
+        <p>
+            <pre>
+                5 + 2 = 7   (+ = soma)
+                5 - 2 = 3   (- = subtração)
+                5 * 2 = 10  (* = multiplicação)
+                5 / 2 = 2.5 (/ = divisão)
+                5 % 2 = 1   (% = resto de divisão inteira)
+                5 ** 2 = 25 (** = potencia)
+
+                ORDEM DE PRECEDÊNCIA
+
+                | ()
+                | **
+                | * / %
+                | + -
+               \ /
+                V
+            </pre>
+        </p>
+        <img src="./img/Atribuição Simples.PNG" alt="Cálculos aritméticos mostrando ordem de precedência">
+    </div>
+
+
+
+
+
+
+</body>
+</html>
+
